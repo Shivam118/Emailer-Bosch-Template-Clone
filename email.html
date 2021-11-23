@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            /* border:1px solid blue; */
+        }
+        img{
+            width:500px;
+        }
+        table{
+            border:10px solid red;
+            width:670px;
+            padding:40px;
+        }
+        table tr{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            position: relative;
+        }
+        table tr:nth-child(1) td{
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom:20px;
+        }
+        table tr:nth-child(1) td img:nth-child(1){
+            width:240px;
+        }
+        table tr:nth-child(1) td img:nth-child(2){
+            width:80px;
+        }
+        table tr:nth-child(2) td, table tr:nth-child(4){
+            width:640px;
+            overflow:hidden;
+        }
+        table tr:nth-child(2) td img{
+            width:1000px;
+            filter: brightness(120%);
+            filter: contrast(120%);
+        }
+        table tr:nth-child(3) td p{
+            font-size:27px;
+            letter-spacing: 5px;
+            font-family:arial;
+            font-weight:bold;
+            color:rgb(211, 32, 32);
+            text-align:center;
+            display:block;
+            width:100%;
+            position: relative;
+            top:-27px;
+        }
+        table tr:nth-child(3) td p span{
+            color:white;
+            display:block;
+            width:100%;
+            position:absolute;
+            text-align:center;
+            top:-20px;
+        }
+        table tr:nth-child(3) td .note{
+            display:block;
+            width:100%;
+            text-align:center;
+            font-size: 20px;
+            position: relative;
+            top:-15px;
+        }
+        table tr:nth-child(4) td{
+            position:relative;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            width:100%;
+        }
+        table tr:nth-child(4) td img{
+            width:430px;
+            height: 430px;
+            object-fit: cover;
+            filter: brightness(120%);
+            filter: contrast(120%);
+            z-index:-1;
+        }
+        table tr:nth-child(4) td p{
+            background:rgb(214, 149, 7);
+            font-size:18px;
+            color:white;
+            position: absolute;
+            left:300px;
+            z-index:10;
+            width:330px;
+            text-align: justify;
+            padding:25px;
+            height:300px;
+        }
+        table tr:nth-child(5){
+            position: relative;
+            width:100%;
+        }
+        table tr:nth-child(5) td p{
+            text-align:center;
+            font-size:20px;
+            margin:10px 0;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="Links/logo.png">
+                <img src="Links/U.png"></td>
+        </tr>
+        <tr>
+            <td><img src="Links/1.jpg"></td>
+        </tr>
+        <tr>
+            <td>
+                <p><span>WELCOME TO</span>
+                    <br>UNSERHAUS VIRTUAL SHOWROOM<br></p>
+                <span class="note">Where Convenience & Class Come Together</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="Links/3.png">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, qui distinctio enim in earum natus totam ut eos eaque, cupiditate illum molestias corporis quibusdam id quas quos dicta eligendi illo porro aspernatur quae. Dolorem pariatur nisi laborum officia unde labore eveniet hic facilis quod obcaecati omnis ab nostrum inventore deleniti iure modi voluptatibus, accusamus quia veritatis quis eos rerum error?
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Nonetheless, unserHaus means 'our House' in German and here, our only objective is to provide a place for our consumers where they can create connections, start conversations and immerse themselves in products and experiences that leave them feeling inspired.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
